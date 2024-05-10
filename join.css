@@ -1,0 +1,140 @@
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    padding-bottom: 1%;
+  }
+
+  .navbar a {
+    float: right;
+    display: block;
+    color: darkgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar a:hover {
+    background-color: darkgray;
+    color: white;
+    opacity: 50%;
+    border: 0;
+    border-radius: 10%;
+  }
+
+  .hero-image {
+    background-image: url('images/IMG_3826.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20%;
+    box-shadow: 10px 10px 10px #666;
+    border: 0;
+    border-radius: 1%;
+  }
+
+  .title {
+    font-size: 5.5rem;
+    opacity: 65%;
+  }
+
+  .hero-text {
+    margin-left: 50px;
+    font-size: 3rem;
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+     font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  .round-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 50px; 
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+    opacity: 75%;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  .round-button:hover {
+    background-color: darkgray;
+  }
+
+  .content {
+    padding: 20px; 
+    color: #333;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    box-shadow: 10px 10px 10px #666;
+    border: 0;
+    border-radius: 1%;
+}
+
+  .content h2 {
+    color: #333;
+    font-size: 5.5rem;
+    opacity: 65%;
+  }
+
+  .content p {
+    color: #333;
+    line-height: 1.6;
+    opacity: 75%;
+    font-size: 3rem;
+  }
+
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-section {
+    margin: 5px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 5px;
+  }
