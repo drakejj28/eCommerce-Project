@@ -1,4 +1,12 @@
-.navbar {
+.logo {
+  height: 10rem;
+  position: sticky;
+  top: 0%;
+  border: 0;
+  border-radius: 10%;
+}
+
+  .navbar {
     overflow: hidden;
     background-color: white;
     font-family: Arial, sans-serif;
@@ -16,15 +24,15 @@
   }
 
   .navbar a:hover {
-    background-color: darkgray;
+    background-color: maroon;
     color: white;
-    opacity: 50%;
+    opacity: 75%;
     border: 0;
     border-radius: 10%;
   }
 
   .hero-image {
-    background-image: url('images/IMG_3826.JPG');
+    background-image: url('images/gameshero.JPG');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -33,8 +41,6 @@
     justify-content: flex-start;
     padding-top: 20%;
     box-shadow: 10px 10px 10px #666;
-    border: 0;
-    border-radius: 1%;
   }
 
   .title {
@@ -78,21 +84,22 @@
 
   .content {
     padding: 20px; 
-    color: #333;
     font-family: "League Gothic", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    box-shadow: 10px 10px 10px #666;
+    background: linear-gradient( to right, white, white, gray);
     border: 0;
     border-radius: 1%;
+    box-shadow: 10px 10px 10px #666;
 }
 
   .content h2 {
-    color: #333;
+    color: orangered;
     font-size: 5.5rem;
     opacity: 65%;
+    text-align: center;
   }
 
   .content p {
@@ -102,8 +109,74 @@
     font-size: 3rem;
   }
 
+  .content li {
+    color: #333;
+    line-height: 1.6;
+    opacity: 75%;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 50%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px #666;
+    border: 0;
+    border-radius: 5%;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 2rem;
+    color: maroon;
+    text-align: center;
+    background: linear-gradient( to left, white, white, gray);
+    opacity: 75%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+  .form-group {
+    margin-bottom: 20px;
+}
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+  button {
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-image-two {
+  background-image: url('images/games3.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20%;
+  box-shadow: 10px 10px 10px #666;
+}
+
   .footer {
-    background-color: #222;
+    background: linear-gradient( to right,#333, #222, black) ;
     color: #fff;
     padding: 20px 0;
     font-family: 'Arial', sans-serif;
@@ -119,6 +192,10 @@
   .social-links {
     list-style: none;
     padding: 0;
+  }
+
+  .social-links img {
+    height: 5rem;
   }
   
   .social-links li {
@@ -138,3 +215,58 @@
   .footer-section h3 {
     margin-bottom: 5px;
   }
+
+  /* Responsive Design for the footer */
+  @media (max-width: 800px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Media query for screens less than 800px */
+@media only screen and (max-width: 800px) {
+  .logo {
+    height: 8rem; /* Adjust logo size for smaller screens */
+  }
+  
+  .navbar a {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+  
+  .hero-text,
+  .content p,
+  .content li,
+  .contact-form {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  
+}
+
+/* Media query for screens greater than 800px */
+@media only screen and (min-width: 800px) {
+  .container {
+    max-width: 1200px; /* Set max-width for the container */
+    margin: auto; /* Center the container */
+  }
+  
+  .logo {
+    height: 12rem; /* Adjust logo size for larger screens */
+  }
+  
+  .navbar a {
+    font-size: 1.8rem; /* Adjust font size for larger screens */
+  }
+  
+  .hero-text,
+  .content p,
+  .content li,
+  .contact-form {
+    font-size: 3.5rem; /* Adjust font size for larger screens */
+  }
+  
+}

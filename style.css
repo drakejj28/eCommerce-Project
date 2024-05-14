@@ -1,9 +1,15 @@
+  .logo {
+  height: 10rem;
+  position: sticky;
+  top: 0%;
+  border: 0;
+  border-radius: 10%;
+}
 
   .navbar {
     overflow: hidden;
     background-color: white;
     font-family: Arial, sans-serif;
-    padding-bottom: 1%;
   }
 
   .navbar a {
@@ -17,9 +23,9 @@
   }
 
   .navbar a:hover {
-    background-color: darkgray;
+    background-color: maroon;
     color: white;
-    opacity: 50%;
+    opacity: 75%;
     border: 0;
     border-radius: 10%;
   }
@@ -34,8 +40,6 @@
     justify-content: flex-start;
     padding-top: 20%;
     box-shadow: 10px 10px 10px #666;
-    border: 0;
-    border-radius: 1%;
   }
 
   .title {
@@ -87,8 +91,6 @@
     font-variation-settings: "wdth" 100;
     background: linear-gradient( to right,#333, #222, black) ;
     box-shadow: 10px 10px 10px #666;
-    border: 0;
-    border-radius: 1%;
 }
 
   .content h2 {
@@ -126,9 +128,9 @@
   }
 
   .slide-image {
-    height: 30%;
-    width: 30%;
-    margin-left: 37rem;
+    height: 15%;
+    width: 15%;
+    margin-left: 44rem;
   }
   
   .slide-content {
@@ -136,7 +138,7 @@
     text-align: center;
     font-size: 1.75rem;
     color: maroon;
-    opacity: 70%;
+    opacity: 75%;
     font-family: "League Gothic", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -176,7 +178,7 @@
   }
   
   .footer {
-    background-color: #222;
+    background: linear-gradient( to right,#333, #222, black) ;
     color: #fff;
     padding: 20px 0;
     font-family: 'Arial', sans-serif;
@@ -197,6 +199,10 @@
   .social-links li {
     display: inline;
     margin-right: 10px;
+  }
+
+  .social-links img {
+    height: 5rem;
   }
   
   .footer-bottom {
@@ -223,70 +229,36 @@
       margin-bottom: 20px;
     }
   }
-  
-  /* Adds responsiveness to the slide content */
-  @media screen and (max-width: 800px) {
-    .slide-content {
-      padding: 10px;
-    }
+
+  /* Media query for screens less than 800px */
+@media only screen and (max-width: 800px) {
+  .logo {
+    height: 8rem; /* Adjusted for smaller screens */
   }
-  
-   /* For tablets and smaller desktops */
- @media (max-width: 1024px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-      text-align: left;
-    }
-  
-    .hero-image {
-      padding-top: 15%;
-    }
-  
-    .title {
-      font-size: 4rem;
-    }
-  
-    .hero-text {
-      font-size: 2rem;
-      margin-left: 20px;
-    }
-  
-    .round-button {
-      font-size: 1.5rem;
-      padding: 8px 16px;
-    }
-  
-    .content {
-      font-size: 1.5rem;
-    }
+
+  .navbar a {
+    font-size: 1.2rem; /* Smaller font size for links */
   }
-  
-  /* For mobile devices */
-  @media (max-width: 800px) {
-    .navbar a {
-      padding: 12px 10px;
-    }
-  
-    .hero-image {
-      padding-top: 10%;
-    }
-  
-    .title {
-      font-size: 3rem;
-    }
-  
-    .hero-text {
-      font-size: 1.5rem;
-      margin-left: 10px;
-    }
-  
-    .round-button {
-      font-size: 1rem;
-      padding: 6px 12px;
-    }
-  
-    .content {
-      font-size: 1rem;
-    }
+
+  .hero-image {
+    padding-top: 10%; /* Less padding for smaller screens */
   }
+
+  .title {
+    font-size: 3.5rem; /* Smaller title for smaller screens */
+  }
+
+  .hero-text {
+    font-size: 2rem; /* Smaller text for smaller screens */
+  }
+
+}
+
+/* Media query for screens greater than 800px */
+@media only screen and (min-width: 801px) {
+  .container {
+    max-width: 1200px; /* Max width for larger screens */
+    margin: auto; /* Center the container */
+  }
+
+}

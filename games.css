@@ -1,3 +1,11 @@
+.logo {
+  height: 10rem;
+  position: sticky;
+  top: 0%;
+  border: 0;
+  border-radius: 10%;
+}
+
 .navbar {
     overflow: hidden;
     background-color: white;
@@ -16,25 +24,23 @@
   }
 
   .navbar a:hover {
-    background-color: darkgray;
+    background-color: maroon;
     color: white;
-    opacity: 50%;
+    opacity: 75%;
     border: 0;
     border-radius: 10%;
   }
 
   .hero-image {
-    background-image: url('images/gameshero.JPG');
+    background-image: url('images/games2.JPG');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 100vh;
+    padding-bottom: 5%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 20%;
     box-shadow: 10px 10px 10px #666;
-    border: 0;
-    border-radius: 1%;
   }
 
   .title {
@@ -81,6 +87,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .product {
@@ -107,8 +115,20 @@
     box-shadow:  10px 10px 10px #666;
   }
 
+  .hero-image-two {
+    background-image: url('images/dance.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 10px 10px 10px #666;
+    padding-top: 25%;
+  }
+
   .footer {
-    background-color: #222;
+    background: linear-gradient( to right,#333, #222, black) ;
     color: #fff;
     padding: 20px 0;
     font-family: 'Arial', sans-serif;
@@ -132,6 +152,10 @@
     list-style: none;
     padding: 0;
   }
+
+  .social-links img {
+    height: 5rem;
+  }
   
   .social-links li {
     display: inline;
@@ -143,16 +167,45 @@
     margin-top: 20px;
   }
 
-  @media (max-width: 768px) {
-    .product {
-      flex-basis: calc(50% - 20px);
-    }
+  /* Media query for screens less than 800px */
+@media only screen and (max-width: 800px) {
+  .navbar a {
+    padding: 12px 14px; /* Adjusted for smaller screens */
+    font-size: 1.2rem;
   }
-  @media (max-width: 480px) {
-    .product {
-      flex-basis: 100%;
-    }
+
+  .hero-image,
+  .hero-image-two {
+    height: 50vh; /* Smaller height for smaller screens */
+    padding-bottom: 2.5%;
   }
+
+  .title {
+    font-size: 3rem; /* Smaller font size for smaller screens */
+  }
+
+  .hero-text {
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .round-button {
+    padding: 8px 15px;
+    font-size: 1.5rem;
+  }
+
+  .product {
+    flex-basis: calc(50% - 20px); /* Larger items for smaller screens */
+  }
+}
+
+/* Media query for screens greater than 800px */
+@media only screen and (min-width: 800px) {
+  .container {
+    max-width: 1200px; /* Max width for larger screens */
+    margin: auto;
+  }
+}
   
   /* Responsive Design for the footer */
   @media (max-width: 800px) {
@@ -164,4 +217,4 @@
     .footer-section {
       margin-bottom: 20px;
     }
-  }
+  } 

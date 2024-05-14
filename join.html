@@ -11,51 +11,104 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="join.html">Join</a>
-        <a href="games.html">Games</a>
-      </nav>
-      
-      <div class="hero-image">
-          <div class="hero-text">
-            <h1 class="title">ARTISAN ECHOES INTERACTIVE</h1> 
-            <p><span style="color: orangered; opacity: 80%;">AMPLIFYING</span> THE VOICES OF REAL ARTISTs</p>
-            <button class="round-button" onclick="location.href='join.html'">JOIN THE CONVERSATION</button>
-          </div>
-        </div>
-        
-        <div class="content">
-          <h2>JOIN THE CONVERSATION</h2>
-          <p>to <lang style="color: orangered; font-weight: bold;">amplify</lang> the voices of real artists</p>
-          <p > At Artisan Echoes Interactive, we believe in the transformative power of art within the digital realm. Our mission is to create a symphony of interactive experiences that not only entertain but also resonate with the soulful expressions of genuine artistry. We are committed to crafting video games that serve as canvases for real artists, amplifying their voices and visions to audiences worldwide. Through innovation, collaboration, and a deep respect for the organic creative process, we strive to illuminate the untold stories and unseen perspectives that enrich our lives and culture.</p>
-        </div>
+  <nav class="navbar">
+    <a href="join.html">Join</a>
+    <a href="games.html">Games</a>
+  </nav>
 
-        <footer class="footer">
-            <div class="footer-content">
-              <div class="footer-section">
-                <h3>About Artisan Echoes Interactive</h3>
-                <p>We are a game studio dedicated to amplifying the voices of real artists through interactive digital experiences.</p>
-              </div>
-              <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: contact@artisanechoes.com</p>
-                <p>Phone: (123) 456-7890</p>
-              </div>
-              <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul class="social-links">
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Instagram</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-bottom">
-              <p>&copy; 2024 Artisan Echoes Interactive. All rights reserved.</p>
-            </div>
-          </footer>
-            
-        <script src="script.js"></script>
+  <a href="index.html">
+    <img class="logo" src="images/Artisanlogo.png">
+  </a>
+      
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 class="title">JOIN THE CONVERSATION</h1> 
+      <p>HELP<span style="color: orangered; opacity: 80%;"> AMPLIFY</span> THE VOICES OF REAL ARTISTS</p>
+      <button class="round-button" onclick="location.href='join.html'">SHARE YOUR STORY</button>
+    </div>
+  </div>
+
+  <br>
+        
+  <div class="content">
+    <h2>JOIN OUR COMMUNITY HUB</h2>
+    <p >At Artisan Echoes Interactive, we’re more than just a game studio. We’re a passionate community of creators, artists, and gamers who share a love for immersive storytelling and captivating experiences. Our community hub is where the magic happens, and we invite you to be a part of it!</p>
+  </div>
+
+  <div class="content">
+    <h2>BLOG</h2>
+    <p>Our blog is a treasure trove of insights, behind-the-scenes glimpses, and thought-provoking articles. Dive into the minds of our developers, artists, and writers as they share their creative process, challenges, and inspirations. Whether you’re interested in game design, narrative development, or simply want to explore the world of gaming, our blog has something for everyone.</p>
+  </div>
+
+  <div class="content">
+    <h2>SOCIAL MEDIA</h2>
+    <p>Connect with us on our social media platforms! We believe that every voice matters, and our community is at the heart of everything we do. Here's where you can find us:</p>
+    <ul>
+      <li><span style="color: orangered;"> X :</span> Follow us @ArtisanEchoes for real-time updates, sneak peeks, and lively discussions.</li>
+      <li><span style="color: orangered;"> Instagram :</span> Get a visual feast of concept art, character designs, and studio life on our Instagram page.</li>
+      <li><span style="color: orangered;"> Facebook :</span> Join our Facebook community and engage with fellow gamers, artists, and storytellers. Like our Facebook page to stay connected.</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>AMPLIFYING ARTISTS' VOICES</h2>
+    <p>We believe that artists deserve recognition and support. Through our community hub, we amplify the voices of real artists—whether they’re illustrators, musicians, or writers. Share your ideas, stories, and creations with us, and let’s celebrate the diverse talents that make our community thrive.</p>
+  </div>
+
+  <br>
+
+  <div class="contact-form">
+    <h2>BE HEARD</h2>
+    <form id="myForm">
+      <div class="form-group">
+        <label for="name">NAME / NICKNAME</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">MESSAGE</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="button" onclick="displayAlert()">Submit</button>
+    </form>
+  </div>
+
+  <br>
+
+  <div class="hero-image-two">
+  </div>
+
+  <br>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Artisan Echoes Interactive</h3>
+        <p>We are a game studio dedicated to amplifying the voices of real artists through interactive digital experiences.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: contact@artisanechoes.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/playstation/?hl=en"><img src="images/insta.png"></a></li>
+          <li><a href="https://twitter.com/PlayStation"><img src="images/xtransparent.png"></a></li>
+          <li><a href="https://www.facebook.com/playstation/"><img src="images/facebook.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Artisan Echoes Interactive ®</p>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
       
     
 </body>
