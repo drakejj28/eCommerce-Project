@@ -1,5 +1,8 @@
 // products for games page
+// this is an array of objects, where each object represents a product
 const products = [
+
+    // each product is an object with properties: image, name, price, and description
     { "image": src="images/game.png", "name": "DESCENT INTO DUSK", "price": "$69.99", "description": "Descent into Dusk is a survival horror video game set in the eerie swamplands of Texas, just as the world teeters on the edge of a catastrophic war. Players step into the shoes of Jarvis, whose world is turned upside down when a loved one vanishes, lured into the depths of an ominous cult. As night falls, the swamps become shadows and whispers, where reality warps and dangers lurk in every murky corner. The game combines the terror of the unknown with the desperation of a personal quest. With each step deeper into the dusk, players must navigate through treacherous terrain, unravel the cult’s dark secrets, and survive encounters with both human and supernatural foes. The haunting atmosphere challenges players to use their wits, stealth, and scarce resources to stay alive while piecing together clues that could lead to their loved one. The game promises a harrowing journey through darkness, both literal and metaphorical, as players confront the true meaning of survival in a world gone mad." },
     { "image": src="images/funkopop.JPG","name": "JARVIS FUNKO POP! FIGURE", "price": "$30.00", "description": "Immerse yourself in the pre-apocalyptic tension with the exclusive Jarvis Funko Pop! From the swamplands of Texas to the brink of world war, this figure captures the essence of survival horror. With meticulous detail mirroring Jarvis’s rugged appearance, this collectible is a must-have for fans of “Descent into Dusk.”" },
     { "image": src="images/vinyl.png", "name": "DESCENT INTO DUSK: ORIGINAL SOUNDTRACK VINYL", "price": "$25.00", "description": "Echo the haunting melodies of the swamplands with the Descent into Dusk: Original Soundtrack Vinyl. This collector’s edition vinyl brings the eerie and atmospheric tunes of Jarvis’s journey to life, perfect for any fan of the game’s chilling narrative. Spin the record and let the dark symphony of survival horror envelop you." },
@@ -14,8 +17,12 @@ const products = [
     { "image": src="images/dance.JPG", "name": "MOONLIT REVERIE POSTER", "price": "$29.99", "description": "Step into the eerie swamplands of Texas with our captivating “Moonlit Reverie” poster inspired by the survival horror video game, Descent into Dusk. Witness the haunting allure of the cult’s moonlit dance—a siren call that lures you deeper into their web. Shadows stretch across the murky waters, secrets fester, and the line between reality and nightmare blurs. Our poster captures this spine-tingling essence, inviting you to unravel chilling mysteries." },
   ];
   
-  // function to create product HTML
+// this function creates HTML for a product and it takes a product object as a parameter
   function createProductHTML(product) {
+
+    // this function returns a string of HTML
+    // the HTML represents a product, with an image, name, price, and description
+    // the product's properties are inserted into the HTML using template literals (the ${} syntax).
     return `
       <div class="product">
         <img src="${product.image}" alt="${product.name}">
@@ -26,22 +33,30 @@ const products = [
     `;
   }
   
-  // inserts products into the page
+ // this line of code is getting a reference to an HTML element with the id products
+ // the HTML element will be used as a container to insert the products into
   const productsContainer = document.getElementById('products');
+
+// the forEach method is being called on the products array
+// for each product in the products array, a function is being executed.
   products.forEach(product => {
+        // The += operator is used to append to the existing innerHTML.
+    // the createProductHTML function is called with the current product as an argument
+    // the HTML is then appended to the innerHTML of the productsContainer
+    // the product is inserted into the page inside the productsContainer
     productsContainer.innerHTML += createProductHTML(product);
   });
 
-  // This function will be called when the user clicks the button
+  // this function will be called when the user clicks the button
 function displayAlert() {
-    // First, we get the value entered by the user in the 'name' input field
+    // first, we get the value entered by the user in the name input field
     const name = document.getElementById('name').value;
-    // Then, we get the value entered by the user in the 'email' input field
+    // then, we get the value entered by the user in the email input field
     const email = document.getElementById('email').value;
-    // Lastly, we get the value entered by the user in the 'message' textarea
+    // lastly, we get the value entered by the user in the message text area
     const message = document.getElementById('message').value;
   
-    // Now, we check if the 'name' field is empty
+    // checks if the 'name' field is empty
     if (name === '') {
       // If it is, we show an alert telling the user to enter their name
       alert('Please enter your name.');
@@ -49,16 +64,25 @@ function displayAlert() {
       return;
     }
   
-    // Next, we check if the 'email' field is empty
+    // checks if the 'email' field is empty
     if (email === '') {
-      // If it is, we show an alert telling the user to enter their email
+      // if it is, we show an alert telling the user to enter their email
       alert('Please enter your email.');
-      // And we stop the function here as well, for the same reason
+      // we stop the function here as well, for the same reason
       return;
     }
+
+       // checks if the 'message' field is empty
+       if (email === '') {
+        // if it is, we show an alert telling the user to enter a message
+        alert('Error: no message submitied. Please try again!');
+        // we stop the function here as well, for the same reason
+        return;
+      }
   
-    // If both 'name' and 'email' are not empty, we create a message
+    // if both 'name' and 'email' are not empty, we create a message
     const alertMessage = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
-    // And then we show an alert with the message that includes the user's data
+
+    // shows an alert with the message that includes the user's data
     alert(alertMessage);
   }
