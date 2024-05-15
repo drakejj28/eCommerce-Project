@@ -2,7 +2,7 @@
   {
     "name": "DESCENT INTO DUSK",
     "price": "$69.99",
-    "description": "Descent into Dusk is a chilling survival horror odyssey set in the haunting swamplands of Texas, teetering on the edge of global calamity. Assume the role of Jarvis, a man ensnared in a web of darkness and deceit as he searches for a loved one lost to the sinister whispers of an evil cult. Navigate a world where the supernatural bleeds into reality, and every step through the murky waters could be your last. Uncover the truth, piece together the enigmatic Shards of Dusk, and survive the horrors that lurk beneath the surface. Will you emerge from the shadows, or will the descent claim you?",
+    "description": "Descent into Dusk is a survival horror video game set in the eerie swamplands of Texas, just as the world teeters on the edge of a catastrophic war. Players step into the shoes of Jarvis, whose world is turned upside down when a loved one vanishes, lured into the depths of an ominous cult. As night falls, the swamps become shadows and whispers, where reality warps and dangers lurk in every murky corner. The game combines the terror of the unknown with the desperation of a personal quest. With each step deeper into the dusk, players must navigate through treacherous terrain, unravel the cult’s dark secrets, and survive encounters with both human and supernatural foes. The haunting atmosphere challenges players to use their wits, stealth, and scarce resources to stay alive while piecing together clues that could lead to their loved one. The game promises a harrowing journey through darkness, both literal and metaphorical, as players confront the true meaning of survival in a world gone mad.",
     "image": "images/to/game.png"
   },
 
@@ -39,5 +39,53 @@
     "price": "$29.99",
     "description": "Delve deeper into the murky depths of “Descent into Dusk” with the official strategy guide. This comprehensive book is filled with maps, strategies, and secrets to help players on their quest to find Jarvis’s missing loved one. It’s the ultimate companion for any fan looking to conquer the swamplands and unravel the cult’s mysteries.",
     "image": "images/to/guide.png"
-  }
-]
+  },
+
+
+  {
+  "name": "TWILIGHT'S EDGE CAP",
+  "price": "$29.99",
+  "description": "Dive into the shadows with the “Twilight’s Edge Cap,” a sleek accessory for gamers who love to explore the mysteries of dusk. This stylish 5-panel hat, adorned with the enigmatic phrase “Descent into Dusk,” is the perfect companion for late-night gaming sessions or urban adventures. Crafted with premium materials, it offers both comfort and a statement piece that resonates with the thrill of discovery in your favorite games. Embrace the night and make a bold statement with this exclusive cap.",
+  "image": "images/to/hat.png"
+  },
+  
+
+  {
+    "name": "JARVIS' LANTERN REPLICA",
+    "price": "$34.99",
+    "description": "The Replica of Jarvis’ Lantern is a meticulously crafted prop that captures the essence of the game “Descent into Dusk.” It features a vintage design with a sturdy metal frame and glass panels, encasing a battery-operated light that emits a soft, ambient glow. The lantern’s handle allows for easy carrying or hanging, making it a versatile addition to any gaming space. Its weathered appearance and attention to detail make it not only a functional light source but also a collector’s item that embodies the spirit of survival and mystery central to the game",
+    "image": "images/to/lantern.png"
+    },
+  
+
+  {
+    "name": "AMULET NECKLACE: THE ENIGMA OF DUSK",
+    "price": "$12.99",
+    "description": "Unveil the mystery of “Descent into Dusk” with this exquisite Cultist Amulet Necklace. Crafted to embody the enigmatic power of the game’s pivotal artifact, this necklace serves as a talisman for those who dare to explore the unknown. The amulet’s intricate design features ancient symbols and a weathered finish, giving it an aura of ancient wisdom and forbidden knowledge. For just $12.99, this necklace is not only a captivating piece of game memorabilia but also a subtle emblem of your adventurous spirit. Wear it and carry the essence of the game wherever you go.",
+    "image": "images/to/amulet.png"
+    },
+
+  {
+      "name": "ESCAPE ROOM EXPERIENCE KIT",
+      "price": "$99.99",
+      "description": "The ‘Escape the Cult’ Escape Room Experience Kit, inspired by the gripping survival horror video game ‘Descent into Dusk,’ offers a heart-racing adventure. This at-home kit immerses players in the eerie swamplands of Texas, echoing the game’s setting as the world hovers on the brink of war. As participants assume the role of Jarvis, they must navigate a series of cryptic puzzles and utilize thematic props to uncover the fate of a vanished loved one and confront the shadowy cult behind the disappearance. This kit is not just a game; it’s a narrative-driven experience that demands teamwork, courage, and strategy, providing an unforgettable group activity that’s as thrilling as it is mysterious. Are you prepared to descend into the dusk and escape the cult?",
+      "image": "images/to/escape.png"
+      },
+
+  {
+        "name": "DESCENT INTO DUSK KEYCHAIN",
+        "price": "$6.99",
+        "description": "The keychain captures the essence of the game with its minimalist design and the enigmatic title etched in a haunting font, a memento for fans and a symbol of the descent into the unknown. This keychain serves as a tangible link to the game’s dark and immersive world, a perfect collectible for any fan.",
+        "image": "images/to/chain.png"
+        },
+
+  {
+          "name": "MOONLIT REVERIE POSTER",
+          "price": "$29.99",
+          "description": "Step into the eerie swamplands of Texas with our captivating “Moonlit Reverie” poster inspired by the survival horror video game, Descent into Dusk. Witness the haunting allure of the cult’s moonlit dance—a siren call that lures you deeper into their web. Shadows stretch across the murky waters, secrets fester, and the line between reality and nightmare blurs. Our poster captures this spine-tingling essence, inviting you to unravel chilling mysteries",
+          "image": "images/to/dance.JPG"
+          }
+  ]
+
+    
+    
